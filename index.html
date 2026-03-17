@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FS23 Mod Dünyası</title>
+<style>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#050816;
+  color:white;
+}
+header{
+  text-align:center;
+  padding:30px;
+  font-size:42px;
+  font-weight:bold;
+  color:#00ffcc;
+  text-shadow:0 0 10px #00ffcc,0 0 20px #00ffcc;
+}
+nav{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  padding:15px;
+  background:#020617;
+  box-shadow:0 0 25px #00ffff;
+}
+nav a{
+  color:white;
+  text-decoration:none;
+  font-size:18px;
+  padding:12px 22px;
+  border-radius:12px;
+  background:linear-gradient(45deg,#00ffff,#ff00ff,#00ff88);
+  background-size:200% 200%;
+  font-weight:bold;
+  transition:0.4s;
+}
+nav a:hover{
+  transform:scale(1.1);
+  background-position:100% 0;
+}
+section{
+  padding:80px 20px;
+  text-align:center;
+}
+.mods{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:30px;
+}
+.card{
+  background:#0f172a;
+  padding:20px;
+  border-radius:20px;
+  width:260px;
+  box-shadow:0 0 20px #00ffff;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+.card:hover{
+  transform: translateY(-10px);
+  box-shadow:0 0 40px #ff00ff,0 0 60px #00ffcc;
+}
+.card img{
+  width:100%;
+  border-radius:15px;
+}
+.download{
+  display:inline-block;
+  margin-top:15px;
+  padding:12px 25px;
+  font-weight:bold;
+  color:white;
+  text-decoration:none;
+  border-radius:12px;
+  background:linear-gradient(45deg,#ff00ff,#00ffff,#22ff88);
+  box-shadow:0 5px 0 #111,0 0 15px #ff00ff;
+  transition:0.3s;
+}
+.download:hover{
+  transform:translateY(3px) scale(1.05);
+  box-shadow:0 2px 0 #111,0 0 25px #00ffff,0 0 50px #ff00ff;
+  background-position:100% 0;
+}
+footer{
+  text-align:center;
+  padding:25px;
+  background:#020617;
+  box-shadow:0 0 20px #00ffff;
+  font-size:14px;
+  opacity:0.7;
+}
+</style>
+</head>
+<body>
+
+<header>🚜 FS23 Mod Dünyası</header>
+
+<nav>
+  <a href="#mods">FS23 Modları</a>
+  <a href="iletisim.html">İletişim</a>
+</nav>
+
+<section id="mods">
+<h2>🚜 FS23 Modları</h2>
+<div class="mods">
+
+<div class="card">
+<img src="https://i.imgur.com/q2QXK6E.jpg" alt="John Deere 8R">
+<h3>John Deere 8R</h3>
+<p>Güçlü ve hızlı traktör modu</p>
+<a class="download" href="#">İndir</a>
+</div>
+
+<div class="card">
+<img src="https://i.imgur.com/wKQ9R7p.jpg" alt="Super Harvester">
+<h3>Super Harvester</h3>
+<p>Ultra hızlı hasat makinesi</p>
+<a class="download" href="#">İndir</a>
+</div>
+
+<div class="card">
+<img src="https://i.imgur.com/J4s7V6B.jpg" alt="Mega Trailer">
+<h3>Mega Trailer</h3>
+<p>Dev kapasiteli römork modu</p>
+<a class="download" href="#">İndir</a>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 FS23 Mod Dünyası
+</footer>
+
+</body>
+</html>
