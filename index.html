@@ -4,21 +4,34 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FS23 Mod Dünyası</title>
+
 <style>
+/* BODY */
 body{
   margin:0;
   font-family: Arial, sans-serif;
   background:#050816;
   color:white;
+  overflow-x:hidden;
 }
+
+/* HEADER */
 header{
   text-align:center;
   padding:30px;
   font-size:42px;
   font-weight:bold;
   color:#00ffcc;
-  text-shadow:0 0 10px #00ffcc,0 0 20px #00ffcc;
+  text-shadow:0 0 10px #00ffcc,0 0 20px #00ffcc,0 0 40px #22ffee;
+  animation: glow 2s infinite alternate;
 }
+
+@keyframes glow{
+  0% { text-shadow:0 0 10px #00ffcc,0 0 20px #00ffcc,0 0 40px #22ffee;}
+  100% { text-shadow:0 0 20px #00ffcc,0 0 40px #00ffcc,0 0 60px #22ffee;}
+}
+
+/* NAVIGATION */
 nav{
   display:flex;
   justify-content:center;
@@ -26,7 +39,11 @@ nav{
   padding:15px;
   background:#020617;
   box-shadow:0 0 25px #00ffff;
+  position:sticky;
+  top:0;
+  z-index:100;
 }
+
 nav a{
   color:white;
   text-decoration:none;
@@ -38,36 +55,54 @@ nav a{
   font-weight:bold;
   transition:0.4s;
 }
+
 nav a:hover{
-  transform:scale(1.1);
+  transform:scale(1.15) rotate(-2deg);
   background-position:100% 0;
+  box-shadow:0 0 20px #ff00ff,0 0 40px #00ffcc;
 }
+
+/* SECTION */
 section{
   padding:80px 20px;
   text-align:center;
 }
+
+/* MOD CARDS */
 .mods{
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
   gap:30px;
+  perspective:1000px;
 }
+
 .card{
   background:#0f172a;
   padding:20px;
   border-radius:20px;
   width:260px;
   box-shadow:0 0 20px #00ffff;
+  transform-style: preserve-3d;
   transition: transform 0.4s, box-shadow 0.4s;
 }
+
 .card:hover{
-  transform: translateY(-10px);
+  transform: rotateY(10deg) rotateX(5deg) translateY(-10px);
   box-shadow:0 0 40px #ff00ff,0 0 60px #00ffcc;
 }
+
 .card img{
   width:100%;
   border-radius:15px;
+  transition: transform 0.4s;
 }
+
+.card:hover img{
+  transform: scale(1.05);
+}
+
+/* 3D DOWNLOAD BUTTON */
 .download{
   display:inline-block;
   margin-top:15px;
@@ -77,14 +112,18 @@ section{
   text-decoration:none;
   border-radius:12px;
   background:linear-gradient(45deg,#ff00ff,#00ffff,#22ff88);
+  background-size:200% 200%;
   box-shadow:0 5px 0 #111,0 0 15px #ff00ff;
   transition:0.3s;
 }
+
 .download:hover{
   transform:translateY(3px) scale(1.05);
   box-shadow:0 2px 0 #111,0 0 25px #00ffff,0 0 50px #ff00ff;
   background-position:100% 0;
 }
+
+/* FOOTER */
 footer{
   text-align:center;
   padding:25px;
@@ -95,6 +134,7 @@ footer{
 }
 </style>
 </head>
+
 <body>
 
 <header>🚜 FS23 Mod Dünyası</header>
