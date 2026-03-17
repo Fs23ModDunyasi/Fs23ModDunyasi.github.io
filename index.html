@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FS23 Mod Dünyası</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#050816;
+color:white;
+}
+
+/* ÜST BAŞLIK */
+
+header{
+text-align:center;
+padding:25px;
+font-size:40px;
+font-weight:bold;
+color:#00ffcc;
+text-shadow:0 0 10px #00ffcc,0 0 20px #00ffcc,0 0 40px #00ffcc;
+}
+
+/* MENÜ */
+
+nav{
+display:flex;
+justify-content:center;
+gap:30px;
+padding:15px;
+background:#020617;
+box-shadow:0 0 20px #00ffff;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:18px;
+padding:10px 20px;
+border-radius:10px;
+background:linear-gradient(45deg,#00ffff,#00ff88);
+color:black;
+font-weight:bold;
+box-shadow:0 0 10px #00ffff;
+transition:0.3s;
+}
+
+nav a:hover{
+transform:scale(1.1);
+box-shadow:0 0 20px #00ffff,0 0 40px #00ffff;
+}
+
+/* BÖLÜMLER */
+
+section{
+padding:60px 20px;
+text-align:center;
+}
+
+/* MOD KARTLARI */
+
+.mods{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+}
+
+.card{
+background:#0f172a;
+padding:20px;
+border-radius:15px;
+width:260px;
+box-shadow:0 0 20px #00ffff;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 40px #00ffff;
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+/* 3D İNDİR BUTONU */
+
+.download{
+display:inline-block;
+margin-top:15px;
+padding:12px 25px;
+font-weight:bold;
+color:white;
+text-decoration:none;
+border-radius:10px;
+background:linear-gradient(45deg,#ff00ff,#00ffff);
+box-shadow:0 5px 0 #111,0 0 15px #ff00ff;
+transition:0.2s;
+}
+
+.download:hover{
+transform:translateY(3px);
+box-shadow:0 2px 0 #111,0 0 25px #00ffff;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+margin-top:40px;
+box-shadow:0 0 20px #00ffff;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+🚜 FS23 Mod Dünyası
+</header>
+
+<nav>
+<a href="#home">Ana Sayfa</a>
+<a href="#mods">FS23 Modları</a>
+<a href="#popular">Popüler Modlar</a>
+<a href="#upload">Mod Yükle</a>
+</nav>
+
+<section id="home">
+<h1>FS23 Modlarına Hoşgeldin</h1>
+<p>En yeni ve en iyi Farming Simulator 23 modlarını indir.</p>
+</section>
+
+<section id="mods">
+<h2>🚜 FS23 Modları</h2>
+
+<div class="mods">
+
+<div class="card">
+<img src="https://i.imgur.com/q2QXK6E.jpg">
+<h3>John Deere 8R</h3>
+<p>Güçlü traktör modu</p>
+<a class="download" href="#">İndir</a>
+</div>
+
+<div class="card">
+<img src="https://i.imgur.com/wKQ9R7p.jpg">
+<h3>Super Harvester</h3>
+<p>Ultra hızlı hasat makinesi</p>
+<a class="download" href="#">İndir</a>
+</div>
+
+<div class="card">
+<img src="https://i.imgur.com/J4s7V6B.jpg">
+<h3>Mega Trailer</h3>
+<p>Dev kapasiteli römork</p>
+<a class="download" href="#">İndir</a>
+</div>
+
+</div>
+</section>
+
+<section id="popular">
+<h2>🔥 Popüler Modlar</h2>
+<p>En çok indirilen modlar burada olacak.</p>
+</section>
+
+<section id="upload">
+<h2>📤 Mod Yükle</h2>
+<p>Yakında kullanıcılar mod yükleyebilecek.</p>
+</section>
+
+<footer>
+© 2026 FS23 Mod Dünyası
+</footer>
+
+</body>
+</html>
